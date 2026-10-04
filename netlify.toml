@@ -1,6 +1,0 @@
-[build]
-  command = "chmod -R +x node_modules/.bin && npm run build"
-  publish = "dist"
-
-[build.environment]
-  NODE_VERSION = "20"

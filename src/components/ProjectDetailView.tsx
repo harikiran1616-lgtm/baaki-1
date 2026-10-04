@@ -60,9 +60,6 @@ export const ProjectDetailView: React.FC<ProjectDetailViewProps> = ({
       members: [...project.members, newPerson]
     });
   };
-  const simplifiedDebts = simplifyDebts(balances);
-
-  const totalSpent = project.expenses.reduce((sum, exp) => sum + exp.amount, 0);
 
   const handleAddExpense = (newExp: any) => {
     const updated: SpendProject = {
